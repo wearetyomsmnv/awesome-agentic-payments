@@ -1,6 +1,22 @@
-# 🤖💰 awesome-agentic-payments
+<p align="center">
+  <a href="https://postimg.cc/bsMdChyg">
+    <img src="https://i.postimg.cc/sgfS2jbk/image.png" alt="Agentic payments ecosystem" width="820">
+  </a>
+</p>
 
-A curated list of protocols, standards, platforms, and resources for building autonomous and machine-to-machine (agentic) payment solutions powered by Web3 and AI.
+<h1 align="center">🤖💰 awesome-agentic-payments</h1>
+
+<p align="center">
+  Curated intelligence on protocols, platforms, and safeguards for autonomous (agentic) payments across Web3 and AI ecosystems.
+</p>
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Focus-Agentic%20Payments-5B8DEF?style=for-the-badge" alt="Focus: Agentic Payments"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Last%20Update-2025--11--09-success?style=for-the-badge" alt="Last update: 2025-11-09"></a>
+  <a href="#-contribution"><img src="https://img.shields.io/badge/Contributions-Welcome-FF69B4?style=for-the-badge" alt="Contributions welcome"></a>
+</p>
+
+> Agent payments delegate intent, validation, and settlement to AI. This list tracks the standards, rails, and defenses that keep those autonomous transactions accountable.
 
 ---
 
@@ -8,10 +24,51 @@ A curated list of protocols, standards, platforms, and resources for building au
 
 The foundational specifications that enable AI agents to securely and programmatically send and receive payments.
 
-| Standard / Protocol               | Description                                                                                                                                                                                                                                                 |
-| :-------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Agent Payments Protocol (AP2)** | A shared protocol developed to securely authenticate and authorize AI agent-initiated payments. Supports multiple payment types (cards, stablecoins, bank transfers) and extends Agent2Agent (A2A) and Model Context Protocol (MCP) to a unified framework. |
-| **x402 Protocol**                 | A crypto-native extension of the AP2. It utilizes the HTTP `402 Payment Required` status code to enable agents to request and settle payments on-chain using stablecoins.                                                                                   |
+| Standard / Protocol                              | Description                                                                                                                                                                                                                                                                                                                            |
+| :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Agent Payments Protocol (AP2)**                | Open standard from Google that uses Verifiable Digital Credentials (VDCs) to capture cart intent, user consent, and payment method mandates. Guarantees integrity of the approval chain and supports fiat rails, stablecoins, and AP2-compliant providers such as Stripe, PayPal, and Coinbase.                                         |
+| **Agentic Commerce Protocol (ACP)**              | Joint OpenAI × Stripe protocol that issues Shared Payment Tokens after the user authorizes a payment. Tokens are passed to merchants via API, enabling instant checkout flows inside ChatGPT and rapid integration with existing e-commerce systems.                                                                                   |
+| **x402 Protocol**                                | Crypto-native extension of AP2 that reuses the HTTP `402 Payment Required` status code so agents can negotiate, request, and settle payments on-chain using stablecoins or other programmable assets.                                                                                                                                   |
+| **Model Context Protocol (MCP)**                 | Interoperability layer that lets AI agents connect to external tools and data sources through a standardized, natural-language interface. Payment providers such as Stripe, Adyen, and Alipay are building MCP servers to expose commerce and reconciliation capabilities to agent ecosystems.                                         |
+| **Trusted Agent Protocol (Visa)**                | Open-source specification from Visa for building trusted agent-to-agent payment workflows with verifiable identity, consent, and settlement guarantees.                                                                                                                                                                                 |
+
+---
+
+## 🛠️ Instruments & Platforms
+
+Solutions and products that provide ready-to-use agentic payment capabilities.
+
+- [Buy it in ChatGPT (OpenAI)](https://openai.com/index/buy-it-in-chatgpt/) — native commerce flow inside ChatGPT that lets users purchase digital and physical goods directly in the chat without manual API setup.
+- [Shopify × OpenAI Commerce](https://www.shopify.com/news/shopify-open-ai-commerce) — Shopify’s integration blueprint for enabling autonomous storefronts and conversational checkout experiences powered by agents.
+- [OpenAI Instant Checkout](https://developers.openai.com/commerce/) — reference implementation of ACP that lets ChatGPT agents fulfill orders using Shared Payment Tokens while preserving merchant observability.
+- [Mastercard Agent Pay](https://www.mastercard.com/us/en/business/artificial-intelligence/mastercard-agent-pay.html) — enterprise-grade agent payment fabric that enforces Know-Your-Agent (KYA) enrollment, policy controls, and auditability across corporate transaction flows.
+- [PayPal Agent Payments](https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/) — AP2-aligned gateway with biometric consent verification and additional fraud controls layered on PayPal’s payments stack.
+- [Kite Agentic Payments Platform](https://gokite.ai/) — infrastructure for orchestrating agent-driven payments, reconciliation, and treasury operations across fiat and crypto rails.
+- **MCP Commerce Servers** — Stripe, Adyen, Alipay, and other PSPs are rolling out MCP adapters that expose catalog, inventory, and settlement actions so autonomous agents can transact through standardized toolchains.
+
+---
+
+## 📰 Articles & Research
+
+Analyses, reports, and news covering the rise of agentic payments.
+
+- [Google Cloud: Announcing AP2](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol) — deep dive into AP2 mandates (Cart, Intent, Payment) and how VDCs maintain an immutable consent chain for autonomous commerce.
+- **Who Pays for You?** — overview of how agent payments shift responsibility for purchase decisions, highlighting the need for protocols that encode intent verification, accountability, and interpretability in autonomous commerce.
+- [BCG: Stablecoins & Agentic AI Reshaping Payments](https://fintechnews.ch/payments/bcg-study-stablecoins-agentic-ai-instant-cross-border-transactions-among-top-trends-reshaping-payments/78499/) — consulting study on the macro trends driving autonomous, cross-border, and AI-mediated transactions.
+- [Cloudflare: Secure Agentic Commerce](https://blog.cloudflare.com/secure-agentic-commerce/) — architectural guidance on protecting smart commerce agents at the edge, with policy enforcement and traffic shielding.
+- [Shopify × OpenAI Announcement](https://www.shopify.com/news/shopify-open-ai-commerce) — outlines how merchants can embed AI-driven checkout experiences and what operational safeguards are required.
+- [Coinbase × AP2 Stablecoin Partnership](https://www.binance.com/en/square/post/29798493296010) — details on extending AP2 to programmable stablecoin settlement and cross-border payouts.
+
+---
+
+## 🔐 Security Solutions
+
+Frameworks and products focused on safeguarding agent identities, transactions, and commerce workflows.
+
+- [SailPoint Agent Identity Security](https://www.sailpoint.com/products/agent-identity-security) — identity governance controls to authenticate, authorize, and monitor AI agents in enterprise environments.
+- [HUMAN Security Agentic Commerce Protection](https://www.humansecurity.com/platform/solutions/agentic-commerce/) — bot and fraud defense tailored to agent-driven purchasing experiences.
+- **Threat Landscape** — Core risks include prompt injection that manipulates payment parameters, agent impersonation of trusted personalities, and confused-deputy abuse of MCP servers. Mitigations rely on Zero Trust architectures, Attribute-Based Access Control (ABAC), runtime intent verification, and circuit breakers for cross-protocol calls.
+- **Assurance Patterns** — Combine cryptographic mandates (AP2 VDCs, Shared Payment Tokens), Know-Your-Agent registries, and Zero-Knowledge Proofs to prove compliance without leaking sensitive data, while logging accountability trails for regulators and dispute resolution.
 
 ---
 
