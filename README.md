@@ -45,6 +45,7 @@ Solutions and products that provide ready-to-use agentic payment capabilities.
 - [PayPal Agent Payments](https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/) — AP2-aligned gateway with biometric consent verification and additional fraud controls layered on PayPal's payments stack.
 - [Kite Agentic Payments Platform](https://gokite.ai/) — infrastructure for orchestrating agent-driven payments, reconciliation, and treasury operations across fiat and crypto rails.
 - **MCP Commerce Servers** — Stripe, Adyen, Alipay, and other PSPs are rolling out MCP adapters that expose catalog, inventory, and settlement actions so autonomous agents can transact through standardized toolchains.
+- [stipend.sh](https://stipend.sh) — non-custodial USDC wallet on Base that an AI agent installs by itself (`npx stipend`, a shell one-liner, or a Python module). Per-transaction, per-day and per-counterparty spending limits, plus a destination allowlist, are enforced in code between the decision and the signature. Free except gas credits; not audited.
 
 ---
 
